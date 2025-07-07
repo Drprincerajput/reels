@@ -1,3 +1,3 @@
 # reels
 
-![Alt text](/reels/screenshot.png)
+![project screenshot](screenshot.png)
