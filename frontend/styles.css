@@ -1,0 +1,72 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Loader styling */
+#loader {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Vertical scroll container with snap behavior */
+#clip-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/* Each reel container */
+.reel {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+/* Video styling */
+video {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Controls (e.g. play, mute, share) */
+.controls {
+  position: absolute;
+  right: 1rem;
+  bottom: 5vh; /* Viewport-safe bottom spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 10; /* Ensure it stays on top of video */
+}
+
+/* Button styling */
+.controls button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.7rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+/* Adjust controls for short mobile screens */
+@media (max-height: 600px) {
+  .controls {
+    bottom: 2vh;
+    gap: 0.5rem;
+  }
+}

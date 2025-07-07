@@ -1,0 +1,42 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.backup
+
+# Python Lambda
+lambda_clips/__pycache__/
+lambda_clips/*.pyc
+lambda_clips/*.pyo
+lambda_clips/*.pyd
+lambda_clips/.pytest_cache/
+lambda_clips/.mypy_cache/
+lambda_clips/.env
+lambda_clips/.venv/
+lambda_clips/env/
+lambda_clips/venv/
+lambda_clips/lambda_clips.zip
+
+# Node / Netlify (if ever installed)
+frontend/node_modules/
+frontend/.cache/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# Logs
+*.log
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.bak
